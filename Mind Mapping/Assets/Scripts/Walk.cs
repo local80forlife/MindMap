@@ -6,14 +6,11 @@ public class Walk : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown ("w")) {
-			Debug.Log ("W was pressed");
-		}
-		transform.position = Input.mousePosition;
-	}
+
+}
 }
