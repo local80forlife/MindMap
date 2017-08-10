@@ -183,13 +183,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 23069619}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -5, y: 2, z: 0}
-  m_LocalScale: {x: 0.5, y: 5, z: 10}
+  m_LocalScale: {x: 10, y: 5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &24988778
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,13 +344,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 281692419}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 2, z: -5}
   m_LocalScale: {x: 10, y: 5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1 &514766338
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ad9c32a37ffd2a4c9be5f074000c9c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axes: 1
+  axes: 0
   sensitivityHor: 9
   sensitivityVert: 9
   minimumVert: -45
@@ -657,13 +657,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1612891084}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 5, y: 2, z: 0}
-  m_LocalScale: {x: 0.5, y: 5, z: 10}
+  m_LocalScale: {x: 10, y: 5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1653796048
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,7 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ad9c32a37ffd2a4c9be5f074000c9c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axes: 2
+  axes: 0
   sensitivityHor: 9
   sensitivityVert: 9
   minimumVert: -45
