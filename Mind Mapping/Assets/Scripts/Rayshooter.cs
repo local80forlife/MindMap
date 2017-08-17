@@ -13,7 +13,8 @@ public class Rayshooter : MonoBehaviour {
 	void Start () {
 		_camera = GetComponent<Camera> ();
 
-
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;                                                                                                                                                                                                                                                 
 	}
 	
 	// Update is called once per frame
@@ -30,8 +31,6 @@ public class Rayshooter : MonoBehaviour {
 				Debug.Log ("Object " + hitWall);
 				GameObject card = (GameObject)Instantiate (Note);
 				card.transform.position = hit.point;
-				//wallRotation = hitWall.transform.rotation;
-				//card.transform.rotation.y = wallRotation.y
 				if(hit.transform.gameObject == GameObject.Find("WallWest")){
 					card.transform.localEulerAngles = new Vector3(0, cardRotateWest, 0);
 				}
@@ -46,5 +45,11 @@ public class Rayshooter : MonoBehaviour {
 
 			}
 		}
+	}
+	void OnGUI(){
+		int size = 12;
+		float posX = _camera.pixelWidth / 2 - size / 4;
+		float posY = _camera.pixelHeight / 2 - size / 2;
+		GUI.Label (new Rect (posX, posY, size, size), "+");
 	}
 }
