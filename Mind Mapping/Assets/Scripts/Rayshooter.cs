@@ -20,9 +20,11 @@ public class Rayshooter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//Vector3 wallRotation;
-		if (Input.GetMouseButtonDown (0)) {
+		if (Input.GetMouseButtonDown (1)) {
 			Vector3 point = new Vector3 (_camera.pixelWidth / 2, _camera.pixelWidth / 2, 0);
 			Ray ray = _camera.ScreenPointToRay (point);
+
+
 			RaycastHit hit;
 
 			if (Physics.Raycast (ray, out hit)) {
