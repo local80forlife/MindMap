@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class NoteCard : MonoBehaviour {
 	public Text cardText;
 	private Transform cameraPosition;
+	private Vector3 cameraDirection;
 	private bool active = false;
 	private Vector3 oldPosition;
 	// Use this for initialization
@@ -19,11 +20,13 @@ public class NoteCard : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			if (!active) {
 				oldPosition = gameObject.transform.position;
+				cameraDirection = cameraPosition.InverseTransformDirection (Vector3.forward);
 				Vector3 newPosition = new Vector3 (cameraPosition.position.x, 
 					cameraPosition.position.y, 
 					cameraPosition.position.z + 1.5f);
 				gameObject.transform.position = newPosition;
-				Debug.Log ("Did work");
+
+				Debug.Log ("camera Direction: " + cameraDirection);
 				active = true;
 			} else {
 				gameObject.transform.position = oldPosition;
@@ -40,11 +43,12 @@ public class NoteCard : MonoBehaviour {
 			return;
 		}
 		foreach (char c in Input.inputString) {
-			if (c == "\b" [0]) {
+			 if (c == "\b" [0]) {
 				if (cardText.text.Length != 0) {
 					cardText.text = cardText.text.Substring (0, cardText.text.Length - 1);
 				}
-			} else {
+			}
+		else {
 				cardText.text += c;
 			}
 

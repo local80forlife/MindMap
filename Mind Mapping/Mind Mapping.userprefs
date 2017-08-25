@@ -4,8 +4,8 @@
     <Files>
       <File FileName="Assets\Scripts\Look.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Walk.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Rayshooter.cs" Line="35" Column="31" />
-      <File FileName="Assets\NoteCard.cs" Line="19" Column="34" />
+      <File FileName="Assets\Scripts\Rayshooter.cs" Line="47" Column="5" />
+      <File FileName="Assets\NoteCard.cs" Line="29" Column="56" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

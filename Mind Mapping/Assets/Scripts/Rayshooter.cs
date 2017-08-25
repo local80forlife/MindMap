@@ -5,8 +5,8 @@ using UnityEngine;
 public class Rayshooter : MonoBehaviour {
 	private Camera _camera;
 	public GameObject Note;
-	private float cardRotateWest = 90.0f;
-	private float cardRotateEast = -90.0f;
+	private float cardRotateWest = -90.0f;
+	private float cardRotateEast = 90.0f;
 	private float cardRotateSouth = -180.0f;
 
 	// Use this for initialization
@@ -49,7 +49,7 @@ public class Rayshooter : MonoBehaviour {
 		}
 	}
 	void OnGUI(){
-		int size = 12;
+		int size = 60;
 		float posX = _camera.pixelWidth / 2 - size / 4;
 		float posY = _camera.pixelHeight / 2 - size / 2;
 		GUI.Label (new Rect (posX, posY, size, size), "+");
